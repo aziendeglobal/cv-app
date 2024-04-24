@@ -19,5 +19,7 @@ class CVController extends Controller
     public function index(Request $request){
 
         $data = $this->CVService->getData();
+
+        return view('index', $data);
     }
 }

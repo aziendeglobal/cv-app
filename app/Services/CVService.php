@@ -10,9 +10,9 @@ class CVService
         $data = [];
 
         $data['fullname'] = 'Nicolás Alberto Fuentes';
-        $data['title']['fullname_2'] = 'Nicolás A. Fuentes';
-        $data['title']['headline'] = 'Software Engineer | CEO | Full Stack Developer | Backend Developer | Frontend Developer| Laravel Developer | PrestaShop Developer';
-        $data['title']['photo'] = 'nicolas_fuentes1.png';
+        $data['intro']['fullname_2'] = 'Nicolás A. Fuentes';
+        $data['intro']['headline'] = 'Software Engineer | CEO | Full Stack Developer | Backend Developer | Frontend Developer| Laravel Developer | PrestaShop Developer';
+        $data['intro']['photo'] = 'nicolas_fuentes1.png';
         //---
         $data['personal']['email'] = 'nicolas.a.fuentes@gmail.com';
         $data['personal']['whatsapp'] = '5493516609376';
@@ -58,10 +58,10 @@ class CVService
         $data['skills'][] = 'Líder de equipo';
         $data['skills'][] = 'Reingeniería';
         //
-        $data['lang'][1] = 'Español';
+        $data['lang'][1]['name'] = 'Español';
         $data['lang'][1]['level'] = 'nativo';
 
-        $data['lang'][2] = 'English';
+        $data['lang'][2]['name']  = 'English';
         $data['lang'][2]['level'] = 'básico';
         //
         $data['profile'] = '
@@ -106,7 +106,7 @@ class CVService
 
         $data['employ'][1]['title'] = 'CEO | Software Engineer | Full Stack Developer | Team Lider';
         $data['employ'][1]['date'] = 'may 2016 - presente';
-        $data['employ'][1]['place'] = 'Universidad Tecnológica Nacional, Argentina';
+        $data['employ'][1]['place'] = 'Aziende Global';
         $data['employ'][1]['description'] = '
         <p>Aziende Global es un emprendimiento de consultora de sistemas, creado y gestionado por mi.</p>
         <p>Trabajé con clientes de España, México, Chile y Argentina. Desarrolle y mantuve principalmente, aplicaciones web con Laravel (PHP), y tiendas virtuales con PrestaShop. Contrate programadores y gestione equipos de desarrollo de software.</p>
@@ -193,5 +193,7 @@ class CVService
         <p>Además, diseñe y desarrolle script php y formularios, para la participación a eventos, y también para obtener reportes sobre las actividades de la Organización y su concurrencia.</p>
         <p> Detalle de actividades: 🔹gestión y mantenimiento de la página web, 🔹desarrollo de scripts en PHP, 🔹manipulación de base de datos Mysql, 🔹implementación de pantallas, reportes, 🔹coordinación de actvidades, Colecta, Construcción</p>        
         ';
+
+        return $data;
     }
 }

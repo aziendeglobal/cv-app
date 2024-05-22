@@ -10,7 +10,7 @@ class CVController extends Controller
     protected $CVService;
 
     public function __construct(
-        CVService $CVService,
+        CVService $CVService
     ){
         $this->CVService = $CVService;
 
@@ -21,5 +21,12 @@ class CVController extends Controller
         $data = $this->CVService->getData();
 
         return view('index', $data);
+    }
+
+    public function portfolio(Request $request){
+
+        $data = [];
+
+        return view('portfolio', $data);
     }
 }

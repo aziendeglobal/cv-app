@@ -14,6 +14,7 @@
                 <p><i class="fa-solid fa-cake-candles data-icon"></i> {!! $personal['birthday'] !!}</p>
                 <p><i class="fa-solid fa-heart data-icon"></i> {!! $personal['civil_status'] !!}</p>
                 <p><i class="fa-brands fa-linkedin data-icon"></i> <a href="https://{!! $personal['linkedin'] !!}" target="_blank">{!! $personal['linkedin'] !!}</a></p>
+                <p><i class="fa-solid fa-suitcase data-icon"></i> <a href="/portfolio" target="_blank"> portfolio </a></p>
             </div>
         </div>
     </div>

@@ -11,7 +11,7 @@ class CVService
 
         $data['fullname'] = 'Nicolás Alberto Fuentes';
         $data['intro']['fullname_2'] = 'Nicolás A. Fuentes';
-        $data['intro']['headline'] = 'Software Engineer | CEO | Full Stack Developer | Backend Developer | Frontend Developer| Laravel Developer | PrestaShop Developer';
+        $data['intro']['headline'] = 'Software Engineer | Full Stack Developer | Backend Developer | Frontend Developer| Laravel Developer | PrestaShop Developer';
         $data['intro']['photo'] = 'nicolas_fuentes1.png';
         //---
         $data['personal']['email'] = 'nicolas.a.fuentes@gmail.com';
@@ -104,7 +104,7 @@ class CVService
 
         //
 
-        $data['employ'][1]['title'] = 'CEO | Software Engineer | Full Stack Developer | Team Lider';
+        $data['employ'][1]['title'] = 'Software Engineer | Full Stack Developer | Team Lider';
         $data['employ'][1]['date'] = 'may 2016 - presente';
         $data['employ'][1]['place'] = 'Aziende Global';
         $data['employ'][1]['description'] = '

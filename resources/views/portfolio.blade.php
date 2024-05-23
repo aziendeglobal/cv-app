@@ -56,7 +56,7 @@
             <div class="card-body">
                 <h5 class="card-title">LARAVEL NOVA - ADMINISTRADOR</h5>
                 <p class="card-text">
-                    Solución de Laravel Nova para realizar tareas y configuraciones de super-administrador.
+                    Solución de Laravel Nova implementada para Speedup, para realizar tareas y configuraciones de super-administrador.
                 </p>
                 <p>&nbsp;</p>
                 <p>
@@ -177,11 +177,11 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#speedupLaravelControls" role="button" data-slide="prev" data-bs-target="#speedupLaravelControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-dark bg-dark"  aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#speedupLaravelControls" role="button" data-slide="next" data-bs-target="#speedupLaravelControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-dark bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -218,11 +218,11 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#speedupLaravelNovaControls" role="button" data-slide="prev" data-bs-target="#speedupLaravelNovaControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#speedupLaravelNovaControls" role="button" data-slide="next" data-bs-target="#speedupLaravelNovaControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -251,11 +251,11 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#fixupLaravelControls" role="button" data-slide="prev" data-bs-target="#fixupLaravelControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#fixupLaravelControls" role="button" data-slide="next" data-bs-target="#fixupLaravelControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -293,11 +293,11 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#fixupAngularControls" role="button" data-slide="prev" data-bs-target="#fixupAngularControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#fixupAngularControls" role="button" data-slide="next" data-bs-target="#fixupAngularControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -329,11 +329,11 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#flamincoLaravelControls" role="button" data-slide="prev" data-bs-target="#flamincoLaravelControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#flamincoLaravelControls" role="button" data-slide="next" data-bs-target="#flamincoLaravelControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -359,11 +359,11 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#speedupResourcesControls" role="button" data-slide="prev" data-bs-target="#speedupResourcesControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#speedupResourcesControls" role="button" data-slide="next" data-bs-target="#speedupResourcesControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -371,5 +371,7 @@
         </div>
     </div>
 </div>
+
+@include('_content.port_califications')
 
 @endsection

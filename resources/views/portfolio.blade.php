@@ -7,6 +7,7 @@
     <h1>Portfolio: Nicolás Alberto Fuentes | <a href="/">CV</a></h1>
 </div>
 
+<!-- INIT ==================================================== -->
 
 <div class="row">
     <div class="card-group ">
@@ -52,6 +53,8 @@
         @include('_port.wizard_angular_frontend')
     </div>
 </div>
+
+<!-- END ==================================================== -->
 
 @include('_port._califications')
 

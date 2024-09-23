@@ -5,7 +5,7 @@
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#fixupAngular" data-bs-toggle="modal" data-bs-target="#fixupAngular">
-                WIZARD - ANGULAR - FRONTEND
+                FIXUP WIZARD - ANGULAR - FRONTEND
             </a>
         </h5>
         <p class="card-text">

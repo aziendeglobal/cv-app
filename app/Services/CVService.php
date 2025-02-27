@@ -104,6 +104,19 @@ class CVService
 
         //
 
+        
+        $data['employ'][0]['title'] = 'Programador Full Stack Senior - PHP';
+        $data['employ'][0]['date'] = 'jun 2024 - presente';
+        $data['employ'][0]['place'] = 'Buzz, Costa Rica';
+        $data['employ'][0]['description'] = '
+        <p>Realicé desarrollo de Aplicaciones Web con Laravel y Filament.</p>
+
+        <p>También, hice mantenimiento y desarrollo de Sitios Web con WordPress: ajustes y desarrollo de temas y plugins, integración de Apis, configuración de traducciones, manejo de ACF, Post Types y Taxonomías.</p>
+        
+        <p>Por otroa lado, realicé la gestión y configuración de servidores.</p>
+        <p>Además, realicé la planificación técnica de proyectos.</p>       
+        ';
+
         $data['employ'][1]['title'] = 'Software Engineer | Full Stack Developer | Team Lider';
         $data['employ'][1]['date'] = 'may 2016 - presente';
         $data['employ'][1]['place'] = 'Aziende Global';

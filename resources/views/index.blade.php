@@ -14,8 +14,9 @@
 
             <div class="col-12 col-xl-9 column-detail px-5">
                 @include('_content.content_profile')
-                @include('_content.content_education')
                 @include('_content.content_employ')
+                @include('_content.content_education')
+
                 @include('_content.content_cert')
                 @include('_content.content_volunt')
             </div>

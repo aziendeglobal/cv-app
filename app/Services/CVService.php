@@ -11,18 +11,19 @@ class CVService
 
         $data['fullname'] = 'Nicolás Alberto Fuentes';
         $data['intro']['fullname_2'] = 'Nicolás A. Fuentes';
-        $data['intro']['headline'] = 'Software Engineer | Full Stack Developer | Backend Developer | Frontend Developer| Laravel Developer | PrestaShop Developer';
+        $data['intro']['headline'] = 'Software Engineer | Full Stack Developer | Laravel Developer | Backend Developer | Frontend Developer|  PrestaShop Developer';
         $data['intro']['photo'] = 'nicolas_fuentes1.png';
         //---
         $data['personal']['email'] = 'nicolas.a.fuentes@gmail.com';
-        $data['personal']['whatsapp'] = '5493516609376';
-        $data['personal']['location'] = 'Argentina, Córdoba, CP 5000';
-        $data['personal']['location_link'] = 'https://maps.app.goo.gl/9XMVXQtDCkJyEhnt5';
+        $data['personal']['whatsapp'] = '5491176001198';
+        $data['personal']['location'] = 'Argentina, Ciudad de Buenos Aires, CP 1425';
+        $data['personal']['location_link'] = 'https://maps.app.goo.gl/xq7KdUQjTJCGZBb66';
         $data['personal']['birthday'] = '25 de febrero de 1983';
         $data['personal']['civil_status'] = 'Casado';
         $data['personal']['linkedin'] = 'linkedin.com/in/nicolasalbertofuentes';
         //
         $data['skills'][] = 'Laravel';
+        $data['skills'][] = 'Filament';
         $data['skills'][] = 'PrestaShop';
         $data['skills'][] = 'Desarrollo de aplicaciones web';
         $data['skills'][] = 'WordPress';

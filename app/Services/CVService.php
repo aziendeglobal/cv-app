@@ -11,7 +11,7 @@ class CVService
 
         $data['fullname'] = 'Nicolás Alberto Fuentes';
         $data['intro']['fullname_2'] = 'Nicolás A. Fuentes';
-        $data['intro']['headline'] = 'Software Engineer | Full Stack Developer | Laravel Developer | Backend Developer | Frontend Developer|  PrestaShop Developer';
+        $data['intro']['headline'] = 'Software Engineer | Full Stack Developer | Laravel Developer | Backend Developer | Frontend Developer | PrestaShop Developer';
         $data['intro']['photo'] = 'nicolas_fuentes1.png';
         //---
         $data['personal']['email'] = 'nicolas.a.fuentes@gmail.com';

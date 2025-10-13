@@ -1,11 +1,11 @@
 <div class="card col-12 col-xl-4 mx-2 my-4">
     <a href="#" data-toggle="modal" data-target="#fixupAngular" data-bs-toggle="modal" data-bs-target="#fixupAngular">
-        <img src="/img/portfolio/fixup_app_pasos_1_equipos.png" class="card-img-top" alt="AZIENDE GLOBAL - FIXUP - ANGULAR">
+        <img src="/img/portfolio/fixup_app_pasos_1_equipos.png" class="card-img-top" alt="FIXUP WIZARD - FRONTEND - ANGULAR ">
     </a>
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#fixupAngular" data-bs-toggle="modal" data-bs-target="#fixupAngular">
-                FIXUP WIZARD - ANGULAR - FRONTEND
+                FIXUP WIZARD - FRONTEND - ANGULAR 
             </a>
         </h5>
         <p class="card-text">
@@ -25,12 +25,12 @@
 </div>
 
 
-<!-- FIXUP - ANGULAR - FRONTEND ---------------------------------------------->
+<!-- FIXUP WIZARD - FRONTEND - ANGULAR  ---------------------------------------------->
 <div class="modal fade mt-0" id="fixupAngular" tabindex="-1" role="dialog" aria-labelledby="fixupAngularLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center">WIZARD - ANGULAR - FRONTEND</h5>
+                <h5 class="modal-title text-center">FIXUP WIZARD - FRONTEND - ANGULAR </h5>
                 <button type="button" class="btn-close close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
             </div>

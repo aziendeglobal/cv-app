@@ -1,11 +1,11 @@
 <div class="card col-12 col-xl-4 mx-2 my-4">
     <a href="#" data-toggle="modal" data-target="#speedupResources" data-bs-toggle="modal" data-bs-target="#speedupResources">
-        <img src="/img/portfolio/laravel_resources_docs.png" class="card-img-top" alt="API / ENDPOINTS - LARAVEL - BACKEND">
+        <img src="/img/portfolio/laravel_resources_docs.png" class="card-img-top" alt="API / ENDPOINTS - BACKEND - LARAVEL">
     </a>
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#speedupResources" data-bs-toggle="modal" data-bs-target="#speedupResources">
-                API / ENDPOINTS - LARAVEL - BACKEND
+                API / ENDPOINTS - BACKEND - LARAVEL
             </a>
         </h5>
         <p class="card-text">
@@ -24,12 +24,12 @@
     </div>
 </div>
 
-<!-- API / ENDPOINTS - LARAVEL - BACKEND ---------------------------------------------->
+<!-- API / ENDPOINTS - BACKEND - LARAVEL ---------------------------------------------->
 <div class="modal fade mt-0" id="speedupResources" tabindex="-1" role="dialog" aria-labelledby="speedupResourcesLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center">API / ENDPOINTS - LARAVEL - BACKEND</h5>
+                <h5 class="modal-title text-center">API / ENDPOINTS - BACKEND - LARAVEL</h5>
                 <button type="button" class="btn-close close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">

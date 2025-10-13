@@ -1,11 +1,11 @@
 <div class="card col-12 col-xl-4 mx-2 my-4">
     <a href="#" data-toggle="modal" data-target="#speedupLaravelNova" data-bs-toggle="modal" data-bs-target="#speedupLaravelNova">
-        <img src="/img/portfolio/laravel_nova_1_login.png" class="card-img-top" alt="AZIENDE GLOBAL - LARAVEL NOVA">
+        <img src="/img/portfolio/laravel_nova_1_login.png" class="card-img-top" alt="SPEEDUP - ADMINISTRADOR - LARAVEL NOVA ">
     </a>
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#speedupLaravelNova" data-bs-toggle="modal" data-bs-target="#speedupLaravelNova">
-                LARAVEL NOVA - ADMINISTRADOR
+                SPEEDUP - ADMINISTRADOR - LARAVEL NOVA 
             </a>
         </h5>
         <p class="card-text">
@@ -25,12 +25,12 @@
 </div>
 
 
-<!-- SPEEDUP - LARAVEL NOVA - ADMINISTRADOR ---------------------------------------------->
+<!-- SPEEDUP - ADMINISTRADOR - LARAVEL NOVA   ---------------------------------------------->
 <div class="modal fade mt-0" id="speedupLaravelNova" tabindex="-1" role="dialog" aria-labelledby="SpeedupLaravelNovaLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center">SPEEDUP - LARAVEL NOVA - ADMINISTRADOR</h5>
+                <h5 class="modal-title text-center">SPEEDUP - ADMINISTRADOR - LARAVEL NOVA </h5>
                 <button type="button" class="btn-close close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">

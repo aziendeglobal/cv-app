@@ -1,11 +1,11 @@
 <div class="card col-12 col-xl-4 mx-2 my-4">
     <a href="#" data-toggle="modal" data-target="#buzzLaravel" data-bs-toggle="modal" data-bs-target="#buzzLaravel">
-        <img src="/img/portfolio/buzz_1_listado.png" class="card-img-top" alt="BUZZ - LARAVEL - ADMINISTRADOR">
+        <img src="/img/portfolio/buzz_1_listado.png" class="card-img-top" alt="BUZZ - ADMINISTRADOR - LARAVEL">
     </a>
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#buzzLaravel" data-bs-toggle="modal" data-bs-target="#buzzLaravel">
-                BUZZ - LARAVEL - ADMINISTRADOR
+                BUZZ - ADMINISTRADOR - LARAVEL
             </a>
         </h5>
         <p class="card-text">
@@ -24,12 +24,12 @@
     </div>
 </div>
 
-<!-- BUZZ - LARAVEL - ADMINISTRADOR ---------------------------------------------->
+<!-- BUZZ - ADMINISTRADOR - LARAVEL ---------------------------------------------->
 <div class="modal fade mt-0" id="buzzLaravel" tabindex="-1" role="dialog" aria-labelledby="buzzLaravelLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center">BUZZ - LARAVEL - ADMINISTRADOR</h5>
+                <h5 class="modal-title text-center">BUZZ - ADMINISTRADOR - LARAVEL</h5>
                 <button type="button" class="btn-close close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">

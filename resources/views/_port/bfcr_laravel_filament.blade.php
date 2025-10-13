@@ -1,11 +1,11 @@
 <div class="card col-12 col-xl-4 mx-2 my-4">
     <a href="#" data-toggle="modal" data-target="#bfcrFilament" data-bs-toggle="modal" data-bs-target="#bfcrFilament">
-        <img src="/img/portfolio/bfcr_2_dashboard.png" class="card-img-top" alt="BFCR - FILAMENT - ADMINISTRADOR">
+        <img src="/img/portfolio/bfcr_2_dashboard.png" class="card-img-top" alt="BFCR - ADMINISTRADOR - LARAVEL FILAMENT ">
     </a>
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#bfcrFilament" data-bs-toggle="modal" data-bs-target="#bfcrFilament">
-                BFCR - FILAMENT - ADMINISTRADOR
+                BFCR - ADMINISTRADOR - LARAVEL FILAMENT 
             </a>
         </h5>
         <p class="card-text">
@@ -24,12 +24,12 @@
     </div>
 </div>
 
-<!-- BFCR - FILAMENT - ADMINISTRADOR ---------------------------------------------->
+<!-- BFCR - ADMINISTRADOR - LARAVEL FILAMENT  ---------------------------------------------->
 <div class="modal fade mt-0" id="bfcrFilament" tabindex="-1" role="dialog" aria-labelledby="bfcrFilamentLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center">BFCR - FILAMENT - ADMINISTRADOR</h5>
+                <h5 class="modal-title text-center">BFCR - ADMINISTRADOR - LARAVEL FILAMENT </h5>
                 <button type="button" class="btn-close close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">

@@ -5,7 +5,7 @@
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#aznarezLaravel" data-bs-toggle="modal" data-bs-target="#aznarezLaravel">
-            AZNAREZ - LARAVEL - LANDING PAGE
+            AZNAREZ - LANDING PAGE - LARAVEL 
             </a>
         </h5>
         <p class="card-text">

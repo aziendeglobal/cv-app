@@ -1,11 +1,11 @@
 <div class="card col-12 col-xl-4 mx-2 my-4">
     <a href="#" data-toggle="modal" data-target="#mechongueLaravel" data-bs-toggle="modal" data-bs-target="#mechongueLaravel">
-        <img src="/img/portfolio/coop_electrica_mechongue_1_login.png" class="card-img-top" alt="MECHONGUE - LARAVEL - ADMIN">
+        <img src="/img/portfolio/coop_electrica_mechongue_1_login.png" class="card-img-top" alt="MECHONGUE - ADMIN - LARAVEL">
     </a>
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#mechongueLaravel" data-bs-toggle="modal" data-bs-target="#mechongueLaravel">
-                MECHONGUE - LARAVEL - ADMIN
+                MECHONGUE - ADMIN - LARAVEL 
             </a>
         </h5>
         <p class="card-text">
@@ -26,12 +26,12 @@
     </div>
 </div>
 
-<!-- MECHONGUE - LARAVEL - ADMIN ---------------------------------------------->
+<!-- MECHONGUE - ADMIN - LARAVEL  ---------------------------------------------->
 <div class="modal fade mt-0" id="mechongueLaravel" tabindex="-1" role="dialog" aria-labelledby="mechongueLaravelLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center">MECHONGUE - LARAVEL - ADMIN</h5>
+                <h5 class="modal-title text-center">MECHONGUE - ADMIN - LARAVEL</h5>
                 <button type="button" class="btn-close close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">

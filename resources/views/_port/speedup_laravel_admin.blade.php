@@ -1,11 +1,11 @@
 <div class="card col-12 col-xl-4 mx-2 my-4">
     <a href="#" data-toggle="modal" data-target="#speedupLaravel" data-bs-toggle="modal" data-bs-target="#speedupLaravel">
-        <img src="/img/portfolio/speedup_1_login.png" class="card-img-top" alt="AZIENDE GLOBAL - SPEEDUP - LARAVEL">
+        <img src="/img/portfolio/speedup_1_login.png" class="card-img-top" alt="SPEEDUP - ADMINISTRADOR - LARAVEL ">
     </a>
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#speedupLaravel" data-bs-toggle="modal" data-bs-target="#speedupLaravel">
-                SPEEDUP - LARAVEL - ADMINISTRADOR
+                SPEEDUP - ADMINISTRADOR - LARAVEL 
             </a>
         </h5>
         <p class="card-text">
@@ -27,12 +27,12 @@
     </div>
 </div>
 
-<!-- SPEEDUP - LARAVEL - ADMINISTRADOR ---------------------------------------------->
+<!-- SPEEDUP - ADMINISTRADOR - LARAVEL  ---------------------------------------------->
 <div class="modal fade mt-0" id="speedupLaravel" tabindex="-1" role="dialog" aria-labelledby="SpeedupLaravelLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center">SPEEDUP - LARAVEL - ADMINISTRADOR</h5>
+                <h5 class="modal-title text-center">SPEEDUP - ADMINISTRADOR - LARAVEL </h5>
                 <button type="button" class="btn-close close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">

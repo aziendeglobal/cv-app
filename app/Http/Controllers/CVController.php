@@ -25,7 +25,7 @@ class CVController extends Controller
 
     public function portfolio(Request $request){
 
-        $data = [];
+        $data = $this->CVService->getPortfolio();;
 
         return view('portfolio', $data);
     }

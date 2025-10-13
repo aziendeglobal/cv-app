@@ -1,11 +1,11 @@
 <div class="card col-12 col-xl-4 mx-2 my-4">
     <a href="#" data-toggle="modal" data-target="#flamincoLaravel" data-bs-toggle="modal" data-bs-target="#flamincoLaravel">
-        <img src="/img/portfolio/flaminco_checkout.png" class="card-img-top" alt="FLAMINCO - LARAVEL">
+        <img src="/img/portfolio/flaminco_checkout.png" class="card-img-top" alt="FLAMINCO - ADMINISTRADOR - LARAVEL ">
     </a>
     <div class="card-body">
         <h5 class="card-title">
             <a href="#" data-toggle="modal" data-target="#flamincoLaravel" data-bs-toggle="modal" data-bs-target="#flamincoLaravel">
-                FLAMINCO - LARAVEL - ADMINISTRADOR
+                FLAMINCO - ADMINISTRADOR - LARAVEL 
             </a>
         </h5>
         <p class="card-text">
@@ -24,12 +24,12 @@
     </div>
 </div>
 
-<!-- FLAMINCO - LARAVEL - ADMINISTRADOR ---------------------------------------------->
+<!-- FLAMINCO - ADMINISTRADOR - LARAVEL  ---------------------------------------------->
 <div class="modal fade mt-0" id="flamincoLaravel" tabindex="-1" role="dialog" aria-labelledby="flamincoLaravelLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center">FLAMINCO - LARAVEL - ADMINISTRADOR</h5>
+                <h5 class="modal-title text-center">FLAMINCO - ADMINISTRADOR - LARAVEL</h5>
                 <button type="button" class="btn-close close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">

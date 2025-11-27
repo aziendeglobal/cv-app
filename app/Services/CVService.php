@@ -29,7 +29,7 @@ class CVService
                 'headline' => $personalDetails->headline,
                 'photo' => $personalDetails->photo,
             ],*/
-           /* 'personal' => [
+            /* 'personal' => [
                 'email' => $personalDetails->email,
                 'whatsapp' => $personalDetails->whatsapp,
                 'location' => $personalDetails->location,
@@ -43,7 +43,7 @@ class CVService
             //'profile' => $personalDetails->profile_summary,
             //'education' => $education->toArray(),
             //'employ' => $employ->toArray(),
-           // 'cert' => $certificate->toArray(),
+            // 'cert' => $certificate->toArray(),
             'volunt' => $volunt->toArray(),
             'cert' => $certificate,
             'education' => $education,
@@ -58,6 +58,12 @@ class CVService
 
     public function getPortfolio()
     {
-        return Portfolio::with('images')->get()->toArray();
+        return Portfolio::with('images')->orderBy('title', 'ASC')->get(); //->toArray();
+    }
+
+    public function getFullname()
+    {
+        $personalDetails = PersonalDetail::first();
+        return $personalDetails ? $personalDetails->full_name : '';
     }
 }

@@ -9,4 +9,15 @@ class Certification extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+        protected $fillable = [
+            'title',
+            'institution',
+            'year',
+            'url',
+    ];
+
+    protected $casts = [
+
+    ];
 }

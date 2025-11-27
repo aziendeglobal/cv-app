@@ -11,22 +11,32 @@ class CVController extends Controller
 
     public function __construct(
         CVService $CVService
-    ){
+    ) {
         $this->CVService = $CVService;
-
     }
 
-    public function index(Request $request){
+    public function index(Request $request)
+    {
 
         $data = $this->CVService->getData();
 
         return view('index', $data);
     }
 
-    public function portfolio(Request $request){
+    public function portfolio(Request $request)
+    {
 
-        $data = $this->CVService->getPortfolio();;
+        $data['portfolios'] = $this->CVService->getPortfolio();
+        $data['fullname'] = $this->CVService->getFullname();
 
         return view('portfolio', $data);
+    }
+
+    public function califications(Request $request)
+    {
+
+        $data['fullname'] = $this->CVService->getFullname();
+
+        return view('califications', $data);
     }
 }

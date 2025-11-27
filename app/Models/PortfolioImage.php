@@ -11,6 +11,15 @@ class PortfolioImage extends Model
     use HasFactory;
     protected $guarded = [];
 
+        protected $fillable = [
+        'portfolio_id',
+        'image_path',
+    ];
+
+    protected $casts = [
+
+    ];
+
     public function portfolio(): BelongsTo
     {
         return $this->belongsTo(Portfolio::class);

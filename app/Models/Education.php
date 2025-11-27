@@ -16,4 +16,16 @@ class Education extends Model
      * @var string
      */
     protected $table = 'educations';
+
+            protected $fillable = [
+            'title',
+            'institution',
+            'start_date',
+            'end_date',
+            'description',
+    ];
+
+    protected $casts = [
+
+    ];
 }

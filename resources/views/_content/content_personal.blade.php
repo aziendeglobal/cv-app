@@ -18,7 +18,8 @@
                 {{-- 'linkedin' ahora es 'linkedin_url' --}}
                 <p><i class="fa-brands fa-linkedin data-icon"></i> <a href="{!! $personal->linkedin_url !!}" target="_blank">{!! str_replace("https://linkedin.com/", "", $personal->linkedin_url)  !!}</a></p>
                 {{-- El link al portfolio también viene del objeto --}}
-                <p><i class="fa-solid fa-suitcase data-icon"></i> <a href="{!! $personal->portfolio_url !!}" target="_blank"> portfolio </a></p>
+                <p><i class="fa-solid fa-suitcase data-icon"></i> <a href="/portfolio" target="_blank"> portfolio </a></p>
+                <p><i class="fa-solid fa-medal data-icon"></i> <a href="/califications" target="_blank"> calificaciones </a></p>
             </div>
         </div>
     </div>

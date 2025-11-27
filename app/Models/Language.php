@@ -9,4 +9,13 @@ class Language extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+     protected $fillable = [
+            'name',
+            'level',
+    ];
+
+    protected $casts = [
+
+    ];
 }

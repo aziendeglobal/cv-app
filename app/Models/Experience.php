@@ -9,4 +9,18 @@ class Experience extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+        //protected $table = '';
+
+            protected $fillable = [
+            'title',
+            'company',
+            'start_date',
+            'end_date',
+            'description',
+    ];
+
+    protected $casts = [
+
+    ];
 }

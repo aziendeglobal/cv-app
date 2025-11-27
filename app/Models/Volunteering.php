@@ -8,4 +8,20 @@ use Illuminate\Database\Eloquent\Model;
 class Volunteering extends Model
 {
     use HasFactory;
+
+      protected $guarded = [];
+
+        //protected $table = '';
+
+            protected $fillable = [
+            'title',
+            'organization',
+            'start_date',
+            'end_date',
+            'description',
+    ];
+
+    protected $casts = [
+
+    ];
 }

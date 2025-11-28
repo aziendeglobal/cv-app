@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Calification;
+use App\Models\CategorySkill;
 use App\Models\Certification;
 use App\Models\Education;
 use App\Models\Experience;
@@ -55,10 +56,67 @@ class CvSeeder extends Seeder
         ]);
 
         // Skills
-        $skills = ['Laravel', 'Filament', 'PrestaShop', 'Desarrollo de aplicaciones web', 'WordPress', 'Angular', 'PHP', 'IA / AI (Copilot, Claude, Gemini)', 'Scrum', 'Kanban', 'Bitbucket', 'GitHub', 'API Rest', 'SOAP', 'Ajax', 'PuTTY', 'Unix', 'Git', 'Jira', 'Cpanel', 'WHM', 'AWS', 'Booststrap', 'CSS', 'HTML', 'JavaScript', 'jQuery', 'MySQL', 'PhpMyAdmin', 'SQL', 'XAMPP', 'Wamp', 'Trello', 'Visual Studio Code', 'Análisis de requisitos', 'Desarrollo de software', 'Servidores web', 'Base de datos', 'Líder de equipo', 'Reingeniería'];
-        foreach ($skills as $skill) {
-            Skill::create(['name' => $skill]);
-        }
+        
+        //$skills = ['Laravel', 'Filament', 'PrestaShop', 'Desarrollo de aplicaciones web', 'WordPress', 'Angular', 'PHP', 'IA / AI (Copilot, Claude, Gemini)', 'Scrum', 'Kanban', 'Bitbucket', 'GitHub', 'API Rest', 'SOAP', 'Ajax', 'PuTTY', 'Unix', 'Git', 'Jira', 'Cpanel', 'WHM', 'AWS', 'Booststrap', 'CSS', 'HTML', 'JavaScript', 'jQuery', 'MySQL', 'PhpMyAdmin', 'SQL', 'XAMPP', 'Wamp', 'Trello', 'Visual Studio Code', 'Análisis de requisitos', 'Desarrollo de software', 'Servidores web', 'Base de datos', 'Líder de equipo', 'Reingeniería'];
+        //foreach ($skills as $skill) {
+        //    Skill::create(['name' => $skill]);
+        //}
+        
+
+        // --- SKILLS CATEGORIZADOS ---
+
+        // 1. Stack Tecnológico Principal (Backend)
+        $catBackend = CategorySkill::create(['name' => 'Stack Tecnológico Principal (Backend)', 'order' => 1]);
+        $catBackend->skills()->createMany([
+            ['name' => 'PHP (Experto)', 'active' => true],
+            ['name' => 'Laravel (Experto)', 'active' => true],
+            ['name' => 'Filament', 'active' => true],
+            ['name' => 'PrestaShop', 'active' => true],
+            ['name' => 'WordPress / WooCommerce', 'active' => true],
+            ['name' => 'MySQL / SQL Optimization', 'active' => true],
+            ['name' => 'API Rest / SOAP', 'active' => true],
+        ]);
+
+        // 2. DevOps, Infraestructura y Control de Versiones
+        $catDevops = CategorySkill::create(['name' => 'DevOps & Infraestructura', 'order' => 2]);
+        $catDevops->skills()->createMany([
+            ['name' => 'AWS', 'active' => true],
+            ['name' => 'Unix / Linux', 'active' => true],
+            ['name' => 'Git (Avanzado)', 'active' => true],
+            ['name' => 'GitHub / Bitbucket', 'active' => true],
+            ['name' => 'Cpanel / WHM', 'active' => true],
+            ['name' => 'PuTTY', 'active' => true],
+            ['name' => 'Docker', 'active' => false], // Ejemplo: oculto hasta que lo domines bien
+        ]);
+
+        // 3. Frontend (Stack Complementario)
+        $catFrontend = CategorySkill::create(['name' => 'Frontend (Stack Complementario)', 'order' => 3]);
+        $catFrontend->skills()->createMany([
+            ['name' => 'JavaScript', 'active' => true],
+            ['name' => 'HTML5 / CSS3', 'active' => true],
+            ['name' => 'Bootstrap', 'active' => true],
+            ['name' => 'jQuery', 'active' => true],
+            ['name' => 'Angular', 'active' => true], // Evalúa si dejarlo true o false según tu nivel actual
+            ['name' => 'Ajax', 'active' => true],
+        ]);
+
+        // 4. Gestión y Metodologías
+        $catManagement = CategorySkill::create(['name' => 'Gestión & Metodologías', 'order' => 4]);
+        $catManagement->skills()->createMany([
+            ['name' => 'Scrum', 'active' => true],
+            ['name' => 'Kanban', 'active' => true],
+            ['name' => 'Jira', 'active' => true],
+            ['name' => 'Liderazgo de equipos', 'active' => true],
+            ['name' => 'IA Tools (Copilot, Claude, Gemini)', 'active' => true],
+        ]);
+
+        // 5. Herramientas Locales (Opcional / Legacy)
+        $catTools = CategorySkill::create(['name' => 'Herramientas de Desarrollo', 'order' => 5]);
+        $catTools->skills()->createMany([
+            ['name' => 'PhpMyAdmin', 'active' => true],
+            ['name' => 'Visual Studio Code', 'active' => true],
+            ['name' => 'XAMPP / Wamp', 'active' => false], // Lo ponemos false por defecto según la recomendación, pero puedes cambiarlo
+        ]);
 
         // Languages
         Language::create(['name' => 'Español', 'level' => 'Nativo']);
@@ -303,7 +361,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Studio APDI',
+            'title' => 'Studio APDI: Frontend Corporativo - WordPress',
             'portfolio_technology_id' => 2,
             'portfolio_type_id' => 2,
             'description' => 'Web principal de APDI Estudio, implementada en WordPress y con WooCommerce configurado para la venta de productos digitales.',
@@ -319,7 +377,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Speedup - Repositorio de APIs',
+            'title' => 'Speedup: APIs - Laravel',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 3,
             'description' => 'Desarrollo de una aplicación de endpoints y APIs Rest para el proyecto de Speedup, para permitir el consumo externo e interno de otras aplicaciones de la plataforma.',
@@ -332,7 +390,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Aziende Dev - Blog Corporativo',
+            'title' => 'Aziende Dev: Blog Corporativo - WordPress',
             'portfolio_technology_id' => '2',
             'portfolio_type_id' => '2',
             'description' => 'El Blog de Aziende Global implementado en WordPress, con diseño personalizado y optimización SEO.',
@@ -348,7 +406,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Aziende Web',
+            'title' => 'Aziende Web: E-commerce - PrestaShop',
             'portfolio_technology_id' => 3,
             'portfolio_type_id' => 2,
             'description' => ' Web principal de Aziende Global, implementada en PrestaShop y con catálogo de productos y servicios.',
@@ -366,7 +424,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Aznarez - Web Corporativa',
+            'title' => 'Aznarez: Web Corporativa - Laravel',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 2,
             'description' => 'Sitio Web oficial de Aznarez',
@@ -380,7 +438,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
         ]);
 
         $p = Portfolio::create([
-            'title' => 'BFCR - Administrador',
+            'title' => 'BFCR: Administrador - Filament Laravel',
             'portfolio_technology_id' => 4,
             'portfolio_type_id' => 1,
             'description' => 'Aplicación desarrollada en Filament, que permite administrar Proveedores, Exportadores, Productos y Compradores. Cuenta con autenticación, roles y permisos.',
@@ -396,7 +454,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
         ]);
 
         $p = Portfolio::create([
-            'title' => 'Buzz - Administrador de Tickets',
+            'title' => 'Buzz: Administrador - Laravel',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 1,
             'description' => 'Aplicación Test que permite gestionar tickets a través de un CRUD, y externamente, a través de una API.',
@@ -415,7 +473,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Chocolate Amargo - Web Corporativa',
+            'title' => 'Chocolate Amargo: Web Corporativa - WordPress',
             'portfolio_technology_id' => 2,
             'portfolio_type_id' => 2,
             'description' => 'Web principal de Chocolate Amargo Repostería, implementada con WordPress y con WooCommerce configurado para la venta de tortas.',
@@ -432,7 +490,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Fixup - Web Corporativa',
+            'title' => 'Fixup: Web Corporativa - Laravel',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 2,
             'description' => 'Frotend utilizado para brindar información acerca de la empresa, y para gestionar nuevas reparaciones de equipos automáticamente.',
@@ -447,7 +505,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Fixup - Wizard de Reparación',
+            'title' => 'Fixup: Wizard de Reparación - Angular',
             'portfolio_technology_id' => 5,
             'portfolio_type_id' => 2,
             'description' => 'Wizard complementario de la web de Fixup, utilizado para la registración de un equipo a reparar, por parte de un cliente, siguiendo paso a paso, los detalles para registrar el equipo a reparar y el servicio solicitado. Luego, envía los datos a un CRM externo.',
@@ -465,7 +523,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Flaminco - Administrador',
+            'title' => 'Flaminco: Administrador - Laravel',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 1,
             'description' => 'Aplicación que brinda soporte para la administración de empresas. Permite gestionar Clientes, Proveedores, Productos, Servicios y Facturas.',
@@ -480,7 +538,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'Khalu - Ecommerce',
+            'title' => 'Khalu: Ecommerce - PrestaShop',
             'portfolio_technology_id' => 3,
             'portfolio_type_id' => 2,
             'description' => 'Web principal de Khalu, implementada en PrestaShop y con catálogo de productos.',
@@ -496,7 +554,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
         ]);
 
         $p = Portfolio::create([
-            'title' => 'Speedup - Administrador de configuración',
+            'title' => 'Speedup: Administrador - Laravel Nova',
             'portfolio_technology_id' => 6,
             'portfolio_type_id' => 1,
             'description' => 'Solución de Laravel Nova implementada para Speedup, para realizar tareas y configuraciones de super-administrador. Permite gestionar Usuarios, Roles, Permisos, Sucursales, y otros recursos clave.',
@@ -512,7 +570,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
         ]);
 
         $p = Portfolio::create([
-            'title' => 'Mechongue - Administrador',
+            'title' => 'Mechongue: Administrador - Laravel',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 1,
             'description' => 'Aplicación web de la Cooperativa de Electricidad de Mechongue, para la gestión de facturas y comprobantes de pago. Permite administrar Clientes, Facturas, Pagos y Reportes.',
@@ -529,7 +587,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         $p = Portfolio::create([
-            'title' => 'PDGSA - Administrador de Proyectos',
+            'title' => 'PDGSA: Administrador de Proyectos - Laravel Livewire',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 1,
             'description' => 'Administrador que permite crear secciones CRUD dinámicamente, y que permite también configurar dinámicamente, los menus de usuarios y administradores.',
@@ -545,7 +603,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
         ]);
 
         $p = Portfolio::create([
-            'title' => 'Speedup - Administrador de Reparaciones',
+            'title' => 'Speedup: Administrador de Reparaciones - Laravel',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 1,
             'description' => 'Speedup es una aplicación web para la gestión de reparación de equipos (smartphone, impresora, computadoras, etc.). Es utilizado por usuarios con diferentes perfiles y roles.',

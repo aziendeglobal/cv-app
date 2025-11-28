@@ -7,7 +7,6 @@
             <div class="col-12 col-xl-3 column-intro px-5">
                 @include('_content.content_title')
                 @include('_content.content_personal')
-                @include('_content.content_skills')
                 @include('_content.content_lang')
             </div>
 

@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\CategorySkill;
 use App\Models\Certification;
 use App\Models\Education;
 use App\Models\Experience;
@@ -22,6 +23,13 @@ class CVService
         $lang = Language::all(['name', 'level']);
         $volunt = Volunteering::orderBy('start_date', 'desc')->get();
 
+        // Obtenemos las categorías que tengan skills activos, ordenadas por el campo 'order'
+        $skillsCategories = CategorySkill::with(['skills' => function ($query) {
+            $query->where('active', true);
+        }])
+            ->orderBy('order', 'asc')
+            ->get();
+
         $data = [
             //'fullname' => $personalDetails->full_name,
             /*'intro' => [
@@ -38,7 +46,7 @@ class CVService
                 'civil_status' => $personalDetails->civil_status,
                 'linkedin' => $personalDetails->linkedin_url,
             ],*/
-            'skills' => Skill::pluck('name')->toArray(),
+            //'skills' => Skill::pluck('name')->toArray(),
             ///'lang' => $lang->toArray(),
             //'profile' => $personalDetails->profile_summary,
             //'education' => $education->toArray(),
@@ -51,6 +59,7 @@ class CVService
             'lang' => $lang,
             'personal' => $personalDetails,
             'volunt' => $volunt,
+            'skills_categories' => $skillsCategories,
         ];
 
         return $data;

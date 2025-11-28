@@ -56,12 +56,12 @@ class CvSeeder extends Seeder
         ]);
 
         // Skills
-        
+
         //$skills = ['Laravel', 'Filament', 'PrestaShop', 'Desarrollo de aplicaciones web', 'WordPress', 'Angular', 'PHP', 'IA / AI (Copilot, Claude, Gemini)', 'Scrum', 'Kanban', 'Bitbucket', 'GitHub', 'API Rest', 'SOAP', 'Ajax', 'PuTTY', 'Unix', 'Git', 'Jira', 'Cpanel', 'WHM', 'AWS', 'Booststrap', 'CSS', 'HTML', 'JavaScript', 'jQuery', 'MySQL', 'PhpMyAdmin', 'SQL', 'XAMPP', 'Wamp', 'Trello', 'Visual Studio Code', 'Análisis de requisitos', 'Desarrollo de software', 'Servidores web', 'Base de datos', 'Líder de equipo', 'Reingeniería'];
         //foreach ($skills as $skill) {
         //    Skill::create(['name' => $skill]);
         //}
-        
+
 
         // --- SKILLS CATEGORIZADOS ---
 
@@ -357,93 +357,122 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
         ]);
 
 
-
-
-
+        //1. Proyectos de Alta Complejidad (Highlight)-------------------
         $p = Portfolio::create([
-            'title' => 'Studio APDI: Frontend Corporativo - WordPress',
-            'portfolio_technology_id' => 2,
-            'portfolio_type_id' => 2,
-            'description' => 'Web principal de APDI Estudio, implementada en WordPress y con WooCommerce configurado para la venta de productos digitales.',
-            'details' => 'Se instalo y configuró WordPress junto con WooCommerce. Se diseño y maquetó el sitio en base a un diseño preexistente, adaptándolo a las necesidades del cliente. Se configuraron pasarelas de pago y productos digitales para la venta online.',
-            'cover_image' => 'apdi_1_home.png',
+            'title' => 'Speedup: Administrador de Reparaciones - Laravel',
+            'portfolio_technology_id' => 1,
+            'portfolio_type_id' => 1,
+            'description' => 'Plataforma SaaS integral para la gestión operativa de servicios técnicos (SAT), migrada desde una arquitectura Legacy Desktop a la Nube.',
+            'details' => 'Arquitectura monolítica modular en Laravel. Migración completa de datos y lógica de negocio desde software de escritorio. Integración de ecosistema de APIs (Logística, Pagos, Notificaciones Omnicanal). Diseño de flujos de trabajo complejos para gestión de estados de reparación en tiempo real.',
+            'cover_image' => 'speedup_1_login.png',
+            'priority' => 1,
         ]);
         $p->images()->createMany([
-            ['image_path' => 'apdi_1_home.png'],
-            ['image_path' => 'apdi_2_category.png'],
-            ['image_path' => 'apdi_3_product.png'],
-            ['image_path' => 'apdi_4_admin.png'],
+            ['image_path' => 'speedup_1_login.png'],
+            ['image_path' => 'speedup_2_dashboard.png'],
+            ['image_path' => 'speedup_3_listado_reparaciones.png'],
+            ['image_path' => 'speedup_4_detalle_reparacion.png'],
+            ['image_path' => 'speedup_5_detalle_reparacion_modal.png'],
         ]);
+
+
 
 
         $p = Portfolio::create([
             'title' => 'Speedup: APIs - Laravel',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 3,
-            'description' => 'Desarrollo de una aplicación de endpoints y APIs Rest para el proyecto de Speedup, para permitir el consumo externo e interno de otras aplicaciones de la plataforma.',
-            'details' => 'Se realizó la implementación de Laravel, junto con Enpoints y APIs solicitados, y una interfaz para consulta desde el navegador. Se implementaron autenticación por token, paginación, filtros y búsquedas. Se documentaron los endpoints para facilitar su uso por terceros.',
+            'description' => 'Arquitectura API RESTful escalable diseñada para desacoplar el núcleo de negocio y permitir la interconexión entre múltiples interfaces (Web, Móvil, Terceros).',
+            'details' => 'Diseño de endpoints bajo estándar JSON:API. Implementación de seguridad vía Tokens (Sanctum/Passport) y Rate Limiting. Optimización de respuestas mediante Eager Loading y Caching. Documentación técnica para consumo de equipos externos e internos.',
             'cover_image' => 'laravel_resources_docs.png',
+            'priority' => 12,
         ]);
         $p->images()->createMany([
             ['image_path' => 'laravel_resources_docs.png'],
         ]);
 
-
         $p = Portfolio::create([
-            'title' => 'Aziende Dev: Blog Corporativo - WordPress',
-            'portfolio_technology_id' => '2',
-            'portfolio_type_id' => '2',
-            'description' => 'El Blog de Aziende Global implementado en WordPress, con diseño personalizado y optimización SEO.',
-            'details' => 'Se instalo y configuro WordPress. Se agrego contenido, y se optimizó para SEO. Se diseño y maquetó el sitio en base a un diseño preexistente, adaptándolo a las necesidades del cliente.',
-            'cover_image' => 'aziende_global_blog_1_home.png',
+            'title' => 'Speedup: Administrador - Laravel Nova',
+            'portfolio_technology_id' => 6,
+            'portfolio_type_id' => 1,
+            'description' => 'Panel de Super-Administración centralizado para la gestión multi-tenant de la plataforma Speedup.',
+            'details' => 'Implementación avanzada de Laravel Nova para gestión de recursos críticos. Desarrollo de Custom Tools y Metrics para análisis de datos en tiempo real. Configuración de sistema de Roles y Permisos (ACL) granular para control de acceso jerárquico.',
+            'cover_image' => 'laravel_nova_1_login.png',
+            'priority' => 13,
         ]);
         $p->images()->createMany([
-            ['image_path' => 'aziende_global_blog_1_home.png'],
-            ['image_path' => 'aziende_global_blog_2_category.png'],
-            ['image_path' => 'aziende_global_blog_3_post.png'],
-            ['image_path' => 'aziende_global_blog_4_admin.png'],
-        ]);
-
-
-        $p = Portfolio::create([
-            'title' => 'Aziende Web: E-commerce - PrestaShop',
-            'portfolio_technology_id' => 3,
-            'portfolio_type_id' => 2,
-            'description' => ' Web principal de Aziende Global, implementada en PrestaShop y con catálogo de productos y servicios.',
-            'details' => 'Se instalo y configuro PrestaShop con un tema optimizado. Se agrego contenido, productos y se optimizó para SEO. Se diseño y maquetó el sitio en base a un diseño preexistente, adaptándolo a las necesidades del cliente.',
-            'cover_image' => 'aziende_global_1_home.png',
-        ]);
-        $p->images()->createMany([
-            ['image_path' => 'aziende_global_1_home.png'],
-            ['image_path' => 'aziende_global_2_category.png'],
-            ['image_path' => 'aziende_global_3_category_2.png'],
-            ['image_path' => 'aziende_global_4_product.png'],
-            ['image_path' => 'aziende_global_5_backoffice.png'],
+            ['image_path' => 'laravel_nova_1_login.png'],
+            ['image_path' => 'laravel_nova_2_dashboard.png'],
+            ['image_path' => 'laravel_nova_3_listado.png'],
+            ['image_path' => 'laravel_nova_4_edit.png'],
+            ['image_path' => 'laravel_nova_5_show.png'],
         ]);
 
 
 
         $p = Portfolio::create([
-            'title' => 'Aznarez: Web Corporativa - Laravel',
+            'title' => 'PDGSA: Administrador de Proyectos - Laravel Livewire',
             'portfolio_technology_id' => 1,
-            'portfolio_type_id' => 2,
-            'description' => 'Sitio Web oficial de Aznarez',
-            'details' => 'Se maqueto el diseño en Bootstrap, y se implemento el proyecto en Laravel. Cuenta con un form de tasación estilizado. Se optimizó para SEO y performance.',
-            'cover_image' => 'aznarez_1_home.png',
+            'portfolio_type_id' => 1,
+            'description' => 'Framework interno para la generación dinámica de paneles administrativos (CRUDs) y gestión de permisos en tiempo de ejecución.',
+            'details' => 'Desarrollo de un motor de generación de interfaces basado en Metronic y Livewire. Implementación de lógica dinámica para la construcción de menús y rutas basada en perfiles de usuario. Integración de autenticación social (OAuth) y componentes reactivos para manipulación de datos masivos.',
+            'cover_image' => 'pdgsa_4_metronic_crud.png',
+            'priority' => 2,
         ]);
         $p->images()->createMany([
-            ['image_path' => 'aznarez_1_home.png'],
-            ['image_path' => 'aznarez_2_form.png'],
-            ['image_path' => 'aznarez_3_contacto.png'],
+            ['image_path' => 'pdgsa_4_metronic_crud.png'],
+            ['image_path' => 'pdgsa_1_metronic_login.png'],
+            ['image_path' => 'pdgsa_2_metronic_dashboard.png'],
+            ['image_path' => 'pdgsa_3_metronic_listado.png'],
+            ['image_path' => 'pdgsa_5_metronic_edit.png'],
+        ]);
+
+
+        $p = Portfolio::create([
+            'title' => 'Fixup: Wizard de Reparación - Angular',
+            'portfolio_technology_id' => 5,
+            'portfolio_type_id' => 2,
+            'description' => 'SPA (Single Page Application) orientada a la conversión, diseñada como un Wizard interactivo para la autogestión de clientes.',
+            'details' => 'Desarrollo Frontend en Angular con gestión de estado compleja. Consumo de APIs RESTful de Laravel. Implementación de validaciones asíncronas y lógica de negocio en el cliente para guiar al usuario. Enfoque Mobile-First y optimización de tiempos de carga.',
+            'cover_image' => 'fixup_app_pasos_1_equipos.png',
+            'priority' => 14,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'fixup_app_pasos_1_equipos.png'],
+            ['image_path' => 'fixup_app_pasos_2_marcas.png'],
+            ['image_path' => 'fixup_app_pasos_3_modelos.png'],
+            ['image_path' => 'fixup_app_pasos_4_fallas.png'],
+            ['image_path' => 'fixup_app_pasos_4_form.png'],
+        ]);
+
+        $p = Portfolio::create([
+            'title' => 'Turisopen: Administrador - Filament Laravel',
+            'portfolio_technology_id' => 4,
+            'portfolio_type_id' => 1,
+            'description' => 'ERP vertical para la industria turística enfocado en la gestión financiera y operativa de reservas y proveedores.',
+            'details' => 'Modelado de datos complejo para manejar la lógica de reservas, pagos a proveedores y conciliación de cobros. Automatización de flujos operativos y generación de documentación financiera automática.',
+            'cover_image' => 'turisopen_2_listado.png',
+            'priority' => 2,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'turisopen_0_login.png'],
+            ['image_path' => 'turisopen_1_dashboard.png'],
+            ['image_path' => 'turisopen_2_listado.png'],
+            ['image_path' => 'turisopen_3_detalle.png'],
+            ['image_path' => 'turisopen_4_detalle.png'],
+            ['image_path' => 'turisopen_5_detalle.png'],
+            ['image_path' => 'turisopen_6_usuarios.png'],
+            ['image_path' => 'turisopen_7_roles.png'],
         ]);
 
         $p = Portfolio::create([
             'title' => 'BFCR: Administrador - Filament Laravel',
             'portfolio_technology_id' => 4,
             'portfolio_type_id' => 1,
-            'description' => 'Aplicación desarrollada en Filament, que permite administrar Proveedores, Exportadores, Productos y Compradores. Cuenta con autenticación, roles y permisos.',
-            'details' => 'Se desarrolló con Filament, los CRUDs correspondientes (resources), se implementó páginas de listados (pages), se integró Google Maps, y se conectó la aplicación a un CRM externo para enviar y validar datos.',
+            'description' => 'Sistema de gestión B2B (Backoffice) para la trazabilidad de la cadena de suministro entre proveedores y exportadores.',
+            'details' => 'Desarrollo ágil utilizando el stack TALL (Tailwind, Alpine, Laravel, Livewire) a través de Filament PHP. Sincronización bidireccional con CRM externo vía API. Implementación de geolocalización de entidades y reportes dinámicos.',
             'cover_image' => 'bfcr_2_dashboard.png',
+            'priority' => 5,
         ]);
         $p->images()->createMany([
             ['image_path' => 'bfcr_1_login.png'],
@@ -453,13 +482,137 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
             ['image_path' => 'bfcr_5_edit_2.png'],
         ]);
 
+
+        $p = Portfolio::create([
+            'title' => 'Flaminco: Administrador - Laravel',
+            'portfolio_technology_id' => 1,
+            'portfolio_type_id' => 1,
+            'description' => 'Sistema de gestión administrativa (SaaS) con automatización de facturación y suscripciones.',
+            'details' => 'Integración robusta con la API de Mercado Pago para gestión de recurrencia (Suscripciones). Automatización de estados de cuenta de clientes y proveedores. Panel de control para monitoreo de métricas de negocio.',
+            'cover_image' => 'flaminco_checkout.png',
+            'priority' => 7,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'flaminco_checkout.png'],
+            ['image_path' => 'flaminco_mercadopago.png'],
+            ['image_path' => 'flaminco_success.png'],
+        ]);
+
+        $p = Portfolio::create([
+            'title' => 'Fixup: Plataforma Corporativa & Integración CRM- Laravel',
+            'portfolio_technology_id' => 1,
+            'portfolio_type_id' => 2,
+            'description' => 'Portal digital de captación de clientes y automatización de solicitudes de servicio técnico, integrado en tiempo real al ecosistema operativo de la empresa.',
+            'details' => 'Arquitectura Web diseñada para la conversión. Desarrollo de capas de integración para la inyección automática de leads y tickets de reparación hacia un CRM externo, eliminando la carga manual de datos. Implementación de validaciones de negocio en el frontend (jQuery/JS) para asegurar la integridad de la información antes del procesamiento.',
+            'cover_image' => 'fixup_home.png',
+            'priority' => 17,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'fixup_home.png'],
+            ['image_path' => 'fixup_servicio.png'],
+        ]);
+
+
+
+        $p = Portfolio::create([
+            'title' => 'Mechongue: Portal de Autogestión & Facturación Digital - Laravel',
+            'portfolio_technology_id' => 1,
+            'portfolio_type_id' => 1,
+            'description' => 'Plataforma de transformación digital para el sector de Utilities (Servicios Públicos), enfocada en la digitalización del ciclo de facturación y cobranza de la cooperativa.',
+            'details' => 'Desarrollo de un Portal de Autogestión (Self-Service) seguro para abonados. Sistema de gestión documental robusto para la distribución masiva de facturación y recepción digital de comprobantes de pago. Implementación de estricto control de acceso (ACL) para segregar la operatoria administrativa de la experiencia del cliente final.',
+            'cover_image' => 'coop_electrica_mechongue_1_login.png',
+            'priority' => 22,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'coop_electrica_mechongue_1_login.png'],
+            ['image_path' => 'coop_electrica_mechongue_2_listado.png'],
+            ['image_path' => 'coop_electrica_mechongue_3_detalle.png'],
+            ['image_path' => 'coop_electrica_mechongue_4_import.png'],
+            ['image_path' => 'coop_electrica_mechongue_5_cliente_dashboard.png'],
+        ]);
+
+
+        //2. E-commerce y Plataformas (PrestaShop / WordPress )--------------------------
+
+
+        $p = Portfolio::create([
+            'title' => 'Buro de Juegos - PrestaShop',
+            'portfolio_technology_id' => 3,
+            'portfolio_type_id' => 2,
+            'description' => 'E-commerce mayorista de alto tráfico. Recuperación de desastres (Disaster Recovery), securización y optimización de infraestructura.',
+            'details' => 'Reingeniería de la plataforma tras incidente de seguridad (Malware). Migración segura de base de datos y actualización de Core. Implementación de estrategias de caché y optimización de consultas SQL para mejorar el Time-to-First-Byte (TTFB) y la experiencia de usuario.',
+            'cover_image' => 'buro_1_home.png',
+            'priority' => 31,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'buro_1_home.png'],
+            ['image_path' => 'buro_2_category.png'],
+            ['image_path' => 'buro_3_product.png'],
+            ['image_path' => 'buro_4_backoffice.png'],
+        ]);
+
+
+        $p = Portfolio::create([
+            'title' => 'Shopping para Mascotas - PrestaShop',
+            'portfolio_technology_id' => 3,
+            'portfolio_type_id' => 2,
+            'description' => 'Marketplace de productos para mascotas con enfoque en UX y geolocalización de sucursales.',
+            'details' => 'Desarrollo de módulos personalizados (Google Maps Store Locator). Hardening de seguridad y actualización de stack tecnológico. Optimización de Core Web Vitals y rediseño completo de la interfaz de usuario (UI).',
+            'cover_image' => 'shoppingmascotas_1_home.png',
+            'priority' => 30,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'shoppingmascotas_1_home.png'],
+            ['image_path' => 'shoppingmascotas_2_category.png'],
+            ['image_path' => 'shoppingmascotas_3_product.png'],
+            ['image_path' => 'shoppingmascotas_4_page.png'],
+            ['image_path' => 'shoppingmascotas_5_backoffice.png'],
+        ]);
+
+
+        $p = Portfolio::create([
+            'title' => 'Khalu: Ecommerce - PrestaShop',
+            'portfolio_technology_id' => 3,
+            'portfolio_type_id' => 2,
+            'description' => 'Plataforma de comercio electrónico optimizada para conversión y logística compleja.',
+            'details' => 'Personalización avanzada de plantilla y módulos. Configuración de reglas de negocio para logística y transportistas. Refactorización de código legado tras upgrade de versión para asegurar compatibilidad y estabilidad del sistema.',
+            'cover_image' => 'khalu_1_home.png',
+            'priority' => 32,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'khalu_1_home.png'],
+            ['image_path' => 'khalu_2_category.png'],
+            ['image_path' => 'khalu_3_product.png'],
+            ['image_path' => 'khalu_4_page.png'],
+            ['image_path' => 'khalu_5_backoffice.png'],
+        ]);
+
+        //3. Sitios Corporativos y Proyectos Menores---------------
+
+        $p = Portfolio::create([
+            'title' => 'Aznarez: Web Corporativa - Laravel',
+            'portfolio_technology_id' => 1,
+            'portfolio_type_id' => 2,
+            'description' => 'Landing Page corporativa de alto rendimiento con motor de tasación inmobiliaria integrado.',
+            'details' => 'Desarrollo a medida en Laravel (sin CMS) para máxima velocidad y seguridad. Implementación de lógica de negocio personalizada para el formulario de tasación. Arquitectura MVC limpia y optimización SEO técnica on-page.',
+            'cover_image' => 'aznarez_1_home.png',
+            'priority' => 50,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'aznarez_1_home.png'],
+            ['image_path' => 'aznarez_2_form.png'],
+            ['image_path' => 'aznarez_3_contacto.png'],
+        ]);
+
+
         $p = Portfolio::create([
             'title' => 'Buzz: Administrador - Laravel',
             'portfolio_technology_id' => 1,
             'portfolio_type_id' => 1,
-            'description' => 'Aplicación Test que permite gestionar tickets a través de un CRUD, y externamente, a través de una API.',
-            'details' => 'Se maqueto el diseño en Bootstrap, junto con Datatable y Chart.js, y al proyecto de lo implemento en Laravel. Cuenta con una API desarrollada para consumo externo, además esta conectada a la API de Giphy, para asignar automáticamente un gif.',
+            'description' => 'Prototipo funcional de sistema de Help Desk (Ticketing) con enriquecimiento de contenido multimedia.',
+            'details' => 'Desarrollo Full Stack (Laravel + Bootstrap). Integración de API de terceros (Giphy) para automatización de respuestas visuales. Diseño de base de datos relacional para trazabilidad de tickets.',
             'cover_image' => 'buzz_1_listado.png',
+            'priority' => 51,
         ]);
         $p->images()->createMany([
             ['image_path' => 'buzz_1_listado.png'],
@@ -471,14 +624,14 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
         ]);
 
 
-
         $p = Portfolio::create([
-            'title' => 'Chocolate Amargo: Web Corporativa - WordPress',
+            'title' => 'Chocolate Amargo: Branding & Web Corporativa - WordPress',
             'portfolio_technology_id' => 2,
             'portfolio_type_id' => 2,
-            'description' => 'Web principal de Chocolate Amargo Repostería, implementada con WordPress y con WooCommerce configurado para la venta de tortas.',
-            'details' => 'Se instalo y configuro WordPress, junto con WooCommerce. Se agrego contenido, y se optimizó para SEO. Se diseño y maquetó el sitio en base a un diseño preexistente, adaptándolo a las necesidades del cliente. Se configuraron pasarelas de pago y productos para la venta online.',
+            'description' => 'Plataforma digital enfocada en Brand Awareness y captación de clientes para el sector gastronómico, con catálogo de productos integrado.',
+            'details' => 'Implementación de estrategia de diseño Mobile-First para maximizar la conversión en dispositivos móviles. Personalización avanzada de tema (Child Theme) para alineación estricta con la identidad de marca. Optimización de imágenes y caché para alto rendimiento (Core Web Vitals) y configuración de SEO Local para posicionamiento geográfico.',
             'cover_image' => 'chocolate_amargo_1_home.png',
+            'priority' => 60,
         ]);
         $p->images()->createMany([
             ['image_path' => 'chocolate_amargo_1_home.png'],
@@ -488,137 +641,56 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
         ]);
 
 
-
         $p = Portfolio::create([
-            'title' => 'Fixup: Web Corporativa - Laravel',
-            'portfolio_technology_id' => 1,
+            'title' => 'Studio APDI: E-commerce de Activos Digitales - WordPress',
+            'portfolio_technology_id' => 2,
             'portfolio_type_id' => 2,
-            'description' => 'Frotend utilizado para brindar información acerca de la empresa, y para gestionar nuevas reparaciones de equipos automáticamente.',
-            'details' => 'Fue implementado con Laravel y maquetado con Bootstrap. También, se utilizo jQuery y Javascript, para la interacción. Se optimizó para SEO y performance. Cuenta con un form de contacto y un form de gestión de reparaciones, que envía los datos a un CRM externo.',
-            'cover_image' => 'fixup_home.png',
+            'description' => 'Solución de comercio electrónico configurada específicamente para la venta y distribución automatizada de productos digitales y servicios de diseño.',
+            'details' => 'Configuración de WooCommerce para manejo de productos virtuales y descargables con protección de enlaces. Integración de pasarelas de pago con validación de transacciones en tiempo real. Automatización de correos transaccionales para la entrega inmediata de activos digitales post-compra.',
+            'cover_image' => 'apdi_1_home.png',
+            'priority' => 61,
         ]);
         $p->images()->createMany([
-            ['image_path' => 'fixup_home.png'],
-            ['image_path' => 'fixup_servicio.png'],
-        ]);
-
-
-
-        $p = Portfolio::create([
-            'title' => 'Fixup: Wizard de Reparación - Angular',
-            'portfolio_technology_id' => 5,
-            'portfolio_type_id' => 2,
-            'description' => 'Wizard complementario de la web de Fixup, utilizado para la registración de un equipo a reparar, por parte de un cliente, siguiendo paso a paso, los detalles para registrar el equipo a reparar y el servicio solicitado. Luego, envía los datos a un CRM externo.',
-            'details' => 'Se desarrollo la aplicación desde cero con Angular, y consumiendo endpoints desarrollados en Laravel, para la impresión de los datos de cada paso. Se maquetó con Bootstrap, y se optimizó para SEO y performance.',
-            'cover_image' => 'fixup_app_pasos_1_equipos.png',
-        ]);
-        $p->images()->createMany([
-            ['image_path' => 'fixup_app_pasos_1_equipos.png'],
-            ['image_path' => 'fixup_app_pasos_2_marcas.png'],
-            ['image_path' => 'fixup_app_pasos_3_modelos.png'],
-            ['image_path' => 'fixup_app_pasos_4_fallas.png'],
-            ['image_path' => 'fixup_app_pasos_4_form.png'],
-        ]);
-
-
-
-        $p = Portfolio::create([
-            'title' => 'Flaminco: Administrador - Laravel',
-            'portfolio_technology_id' => 1,
-            'portfolio_type_id' => 1,
-            'description' => 'Aplicación que brinda soporte para la administración de empresas. Permite gestionar Clientes, Proveedores, Productos, Servicios y Facturas.',
-            'details' => 'Se integro la API de Mercado Pago, para realizar los pagos de las suscripciones automáticamente.',
-            'cover_image' => 'flaminco_checkout.png',
-        ]);
-        $p->images()->createMany([
-            ['image_path' => 'flaminco_checkout.png'],
-            ['image_path' => 'flaminco_mercadopago.png'],
-            ['image_path' => 'flaminco_success.png'],
+            ['image_path' => 'apdi_1_home.png'],
+            ['image_path' => 'apdi_2_category.png'],
+            ['image_path' => 'apdi_3_product.png'],
+            ['image_path' => 'apdi_4_admin.png'],
         ]);
 
 
         $p = Portfolio::create([
-            'title' => 'Khalu: Ecommerce - PrestaShop',
+            'title' => 'Aziende Dev: Plataforma de Contenidos Técnicos - WordPress',
+            'portfolio_technology_id' => '2',
+            'portfolio_type_id' => '2',
+            'description' => 'Hub de contenidos y blog corporativo diseñado para el posicionamiento orgánico (SEO) en nichos tecnológicos y desarrollo de software.',
+            'details' => 'Arquitectura de información optimizada para la indexación. Implementación de Marcado de Esquema (Schema.org) para artículos técnicos y fragmentos enriquecidos. Optimización de la legibilidad y estructura semántica del contenido. Configuración de seguridad (Hardening) para protección contra ataques comunes en CMS.',
+            'cover_image' => 'aziende_global_blog_1_home.png',
+            'priority' => 71,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'aziende_global_blog_1_home.png'],
+            ['image_path' => 'aziende_global_blog_2_category.png'],
+            ['image_path' => 'aziende_global_blog_3_post.png'],
+            ['image_path' => 'aziende_global_blog_4_admin.png'],
+        ]);
+
+
+        $p = Portfolio::create([
+            'title' => 'Aziende Web: Portal Corporativo & Catálogo B2B - PrestaShop',
             'portfolio_technology_id' => 3,
             'portfolio_type_id' => 2,
-            'description' => 'Web principal de Khalu, implementada en PrestaShop y con catálogo de productos.',
-            'details' => 'Se realizo upgrade de versión, se instalo y configurado un tema optimizado, se configuro transportistas, y realizaron diferentes tipos de optimizaciones.',
-            'cover_image' => 'khalu_1_home.png',
+            'description' => 'Portal corporativo orientado a la oferta de servicios profesionales y soluciones empresariales, funcionando como motor de generación de leads.',
+            'details' => 'Implementación de PrestaShop en modo catálogo/híbrido para la exhibición de servicios sin checkout directo. Diseño de taxonomías personalizadas para categorización de soluciones de IT. Optimización de Call-to-Actions (CTAs) y formularios de contacto para maximizar el ratio de conversión de visitantes a prospectos comerciales.',
+            'cover_image' => 'aziende_global_1_home.png',
+            'priority' => 72,
         ]);
         $p->images()->createMany([
-            ['image_path' => 'khalu_1_home.png'],
-            ['image_path' => 'khalu_2_category.png'],
-            ['image_path' => 'khalu_3_product.png'],
-            ['image_path' => 'khalu_4_page.png'],
-            ['image_path' => 'khalu_5_backoffice.png'],
+            ['image_path' => 'aziende_global_1_home.png'],
+            ['image_path' => 'aziende_global_2_category.png'],
+            ['image_path' => 'aziende_global_3_category_2.png'],
+            ['image_path' => 'aziende_global_4_product.png'],
+            ['image_path' => 'aziende_global_5_backoffice.png'],
         ]);
-
-        $p = Portfolio::create([
-            'title' => 'Speedup: Administrador - Laravel Nova',
-            'portfolio_technology_id' => 6,
-            'portfolio_type_id' => 1,
-            'description' => 'Solución de Laravel Nova implementada para Speedup, para realizar tareas y configuraciones de super-administrador. Permite gestionar Usuarios, Roles, Permisos, Sucursales, y otros recursos clave.',
-            'details' => 'Se realizó la implementación de Laravel Nova, junto con varias estadísticas, filtros, imports, exports y actions. Se integró con un sistema de autenticación SSO externo, y se implementaron roles y permisos personalizados.',
-            'cover_image' => 'laravel_nova_1_login.png',
-        ]);
-        $p->images()->createMany([
-            ['image_path' => 'laravel_nova_1_login.png'],
-            ['image_path' => 'laravel_nova_2_dashboard.png'],
-            ['image_path' => 'laravel_nova_3_listado.png'],
-            ['image_path' => 'laravel_nova_4_edit.png'],
-            ['image_path' => 'laravel_nova_5_show.png'],
-        ]);
-
-        $p = Portfolio::create([
-            'title' => 'Mechongue: Administrador - Laravel',
-            'portfolio_technology_id' => 1,
-            'portfolio_type_id' => 1,
-            'description' => 'Aplicación web de la Cooperativa de Electricidad de Mechongue, para la gestión de facturas y comprobantes de pago. Permite administrar Clientes, Facturas, Pagos y Reportes.',
-            'details' => 'Se desarrollo una aplicación web desde cero con Laravel, para que administradores puedan subir facturas de sus clientes, desde un panel de administración, y para que los clientes, desde un panel de cliente, puedan bajarlas y subir el comprobante de pago correspondiente.',
-            'cover_image' => 'coop_electrica_mechongue_1_login.png',
-        ]);
-        $p->images()->createMany([
-            ['image_path' => 'coop_electrica_mechongue_1_login.png'],
-            ['image_path' => 'coop_electrica_mechongue_2_listado.png'],
-            ['image_path' => 'coop_electrica_mechongue_3_detalle.png'],
-            ['image_path' => 'coop_electrica_mechongue_4_import.png'],
-            ['image_path' => 'coop_electrica_mechongue_5_cliente_dashboard.png'],
-        ]);
-
-
-        $p = Portfolio::create([
-            'title' => 'PDGSA: Administrador de Proyectos - Laravel Livewire',
-            'portfolio_technology_id' => 1,
-            'portfolio_type_id' => 1,
-            'description' => 'Administrador que permite crear secciones CRUD dinámicamente, y que permite también configurar dinámicamente, los menus de usuarios y administradores.',
-            'details' => 'Se implemento el inicio de sesión con Google. Se desarrollo un generador de CRUD a medida, integrado a la plantilla Metronic de Laravel, que utiliza Datatable y Livewire, entre otras librerías. Se desarrollo una configuración dinámica de menú, particular para cada usuario y proyecto asociado.',
-            'cover_image' => 'pdgsa_4_metronic_crud.png',
-        ]);
-        $p->images()->createMany([
-            ['image_path' => 'pdgsa_4_metronic_crud.png'],
-            ['image_path' => 'pdgsa_1_metronic_login.png'],
-            ['image_path' => 'pdgsa_2_metronic_dashboard.png'],
-            ['image_path' => 'pdgsa_3_metronic_listado.png'],
-            ['image_path' => 'pdgsa_5_metronic_edit.png'],
-        ]);
-
-        $p = Portfolio::create([
-            'title' => 'Speedup: Administrador de Reparaciones - Laravel',
-            'portfolio_technology_id' => 1,
-            'portfolio_type_id' => 1,
-            'description' => 'Speedup es una aplicación web para la gestión de reparación de equipos (smartphone, impresora, computadoras, etc.). Es utilizado por usuarios con diferentes perfiles y roles.',
-            'details' => 'Se desarrollo la aplicación desde cero con Laravel, realizando la migración desde una aplicación Desktop. Se instalo una plantilla optimizada, realizando configuraciones en Bootstrap y jQuery. Se integraron varias APIs, como: Mercado Pago, Zenvia (Sirena), Oca, Correo Argentino, entre otras.',
-            'cover_image' => 'speedup_1_login.png',
-        ]);
-        $p->images()->createMany([
-            ['image_path' => 'speedup_1_login.png'],
-            ['image_path' => 'speedup_2_dashboard.png'],
-            ['image_path' => 'speedup_3_listado_reparaciones.png'],
-            ['image_path' => 'speedup_4_detalle_reparacion.png'],
-            ['image_path' => 'speedup_5_detalle_reparacion_modal.png'],
-        ]);
-
-
 
         // Califications
         Calification::create([

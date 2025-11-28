@@ -67,7 +67,7 @@ class CVService
 
     public function getPortfolio()
     {
-        return Portfolio::with('images')->orderBy('title', 'ASC')->get(); //->toArray();
+        return Portfolio::with('images')->where('active',true)->orderBy('priority', 'ASC')->get(); //->toArray();
     }
 
     public function getFullname()

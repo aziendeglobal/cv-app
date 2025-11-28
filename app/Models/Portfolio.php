@@ -22,6 +22,7 @@ class Portfolio extends Model
             'details',
             'cover_image',
             'active',
+            'priority',
     ];
 
     protected $casts = [

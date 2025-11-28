@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="row">
-    <h1>Portfolio: {{ $fullname }} | <a href="/">CV</a></h1>
+    <h1 >Portfolio: {{ $fullname }} | <a href="/">CV</a> | <a href="/califications">Califications</a></h1>
 </div>
 
 <!-- INIT ==================================================== -->
@@ -24,7 +24,7 @@
                 <img src="{{ asset('img/portfolio/' . $project->cover_image) }}" class="card-img-top" alt="{{ $project->title }}">
             </a>
             <div class="card-body">
-                <h5 class="card-title">
+                <h5 class="card-title text-uppercase">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#{{ $modalId }}">
                         {{-- El título viene de la base de datos --}}
                         {{ $project->title }}

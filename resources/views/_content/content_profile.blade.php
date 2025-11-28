@@ -9,8 +9,8 @@
 </div>
 
 {{-- NUEVA SECCIÓN DE SKILLS CATEGORIZADOS (Integrada visualmente bajo el perfil) --}}
-<div class="mt-4 pt-3 border-top">
-    <h5 class="mb-3 text-uppercase text-secondary text-start" style="font-size: 0.9rem; letter-spacing: 1px;">Stack Tecnológico & Habilidades</h5>
+<div class="mt-4 pt-3 ">
+    <h4 class="mb-3 text-uppercase text-secondary text-start border-bottom" style="font-size: 0.9rem; letter-spacing: 1px;">Stack Tecnológico & Habilidades</h4>
 
     <div class="row text-start">
         @foreach($skills_categories as $category)

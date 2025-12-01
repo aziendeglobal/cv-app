@@ -358,6 +358,49 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
 
 
         //1. Proyectos de Alta Complejidad (Highlight)-------------------
+
+
+        $p = Portfolio::create([
+            'title' => 'CosteApp: Plataforma SaaS de Gestión de Costos - Laravel Filament',
+            'portfolio_technology_id' => 4,
+            'portfolio_type_id' => 1,
+            'description' => 'Plataforma SaaS (Software as a Service) Cloud-Native diseñada para la inteligencia financiera de PyMEs, transformando hojas de cálculo complejas en flujos de trabajo automatizados y escalables.',
+            'details' => 'Desarrollo rápido de aplicaciones (RAD) utilizando el ecosistema Filament PHP (TALL Stack). Diseño de algoritmos de cálculo de costos unitarios y rentabilidad en tiempo real. Arquitectura optimizada para reemplazar procesos manuales (Excel Legacy) por una solución centralizada en la nube, garantizando la integridad de los datos y la toma de decisiones basada en métricas precisas.',
+            'cover_image' => 'costeapp_1_dashboard.png',
+            'priority' => 1,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'costeapp_1_dashboard.png'],
+            ['image_path' => 'costeapp_2_dashboard.png'],
+            ['image_path' => 'costeapp_3_dashboard.png'],
+            ['image_path' => 'costeapp_4_listado.png'],
+            ['image_path' => 'costeapp_5_detalle.png'],
+            ['image_path' => 'costeapp_6_login.png'],
+        ]);
+
+
+        $p = Portfolio::create([
+            'title' => 'Advanced Map Markers: Módulo de Geolocalización - PrestaShop',
+            'portfolio_technology_id' => 3,
+            'portfolio_type_id' => 2,
+            'description' => 'Solución modular Plug & Play para la geolocalización estratégica de puntos de venta, eventos y distribuidores dentro del ecosistema PrestaShop.',
+            'details' => 'Desarrollo de arquitectura modular nativa siguiendo los estándares estrictos de PrestaShop. Integración avanzada con Google Maps Platform API permitiendo personalización visual completa (JSON Styling). Panel de administración "No-Code" para la gestión dinámica de POIs (Puntos de Interés). Implementación de Hooks personalizados para una inyección flexible en el frontend sin dependencias de código.',
+            'cover_image' => 'advancedmapmarkers_1_front.png',
+            'priority' => 1,
+        ]);
+        $p->images()->createMany([
+            ['image_path' => 'advancedmapmarkers_2_backend.png'],
+            ['image_path' => 'advancedmapmarkers_3_backend.png'],
+            ['image_path' => 'advancedmapmarkers_4_backend.png'],
+            ['image_path' => 'advancedmapmarkers_5_backend.png'],
+            ['image_path' => 'advancedmapmarkers_6_backend.png'],
+            ['image_path' => 'advancedmapmarkers_7_backend.png'],
+            ['image_path' => 'advancedmapmarkers_8_backend.png'],
+            ['image_path' => 'advancedmapmarkers_1_front.png'],
+
+        ]);
+
+
         $p = Portfolio::create([
             'title' => 'Speedup: Administrador de Reparaciones - Laravel',
             'portfolio_technology_id' => 1,
@@ -365,7 +408,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
             'description' => 'Plataforma SaaS integral para la gestión operativa de servicios técnicos (SAT), migrada desde una arquitectura Legacy Desktop a la Nube.',
             'details' => 'Arquitectura monolítica modular en Laravel. Migración completa de datos y lógica de negocio desde software de escritorio. Integración de ecosistema de APIs (Logística, Pagos, Notificaciones Omnicanal). Diseño de flujos de trabajo complejos para gestión de estados de reparación en tiempo real.',
             'cover_image' => 'speedup_1_login.png',
-            'priority' => 1,
+            'priority' => 7,
         ]);
         $p->images()->createMany([
             ['image_path' => 'speedup_1_login.png'],
@@ -417,7 +460,7 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
             'description' => 'Framework interno para la generación dinámica de paneles administrativos (CRUDs) y gestión de permisos en tiempo de ejecución.',
             'details' => 'Desarrollo de un motor de generación de interfaces basado en Metronic y Livewire. Implementación de lógica dinámica para la construcción de menús y rutas basada en perfiles de usuario. Integración de autenticación social (OAuth) y componentes reactivos para manipulación de datos masivos.',
             'cover_image' => 'pdgsa_4_metronic_crud.png',
-            'priority' => 2,
+            'priority' => 4,
         ]);
         $p->images()->createMany([
             ['image_path' => 'pdgsa_4_metronic_crud.png'],

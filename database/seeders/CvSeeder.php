@@ -15,6 +15,7 @@ use App\Models\PortfolioType;
 use App\Models\Skill;
 use App\Models\Volunteering;
 use Illuminate\Database\Seeder;
+use App\Models\Qualification;
 
 class CvSeeder extends Seeder
 {
@@ -735,23 +736,38 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
             ['image_path' => 'aziende_global_5_backoffice.png'],
         ]);
 
-        // Califications
-        Calification::create([
-            'title' => 'Workana.com - Perfil de Freelance',
-            'description' => '<img src="/screencapture-workana-freelancer-2.png"> <br> Calificación: 5.0 | Proyectos completados: 50+ | Comentarios: 20+',
-            'image_path' => 'screencapture-workana-freelancer-2.png',
+
+
+
+
+
+        // 1. Workana
+        $q = Qualification::create([
+            'title' => 'EXPERIENCIA: WORKANA.COM',
+            'cover_image' => '/img/porfolio/screencapture-workana-freelancer-2.png',
+        ]);
+        $q->images()->createMany([
+            ['image_url' => '/img/porfolio/screencapture-workana-freelancer-2.png'],
         ]);
 
-        Calification::create([
-            'title' => 'Freelancer.com - Perfil de Freelance',
-            'description' => '<img src="/screencapture-freelancer-u-nicolasafuentes-1"> <img src="/screencapture-freelancer-u-nicolasafuentes-2"> <br>Calificación: 5.0 | Proyectos completados: 20+ | Comentarios: 10+',
-            'image_path' => 'screencapture-freelancer-u-nicolasafuentes-1.png',
+        // 2. Freelancer.com
+        $q = Qualification::create([
+            'title' => 'EXPERIENCIA: FREELANCER.COM',
+            'cover_image' => '/img/porfolio/screencapture-freelancer-u-nicolasafuentes-1.png',
+        ]);
+        $q->images()->createMany([
+            ['image_url' => '/img/porfolio/screencapture-freelancer-u-nicolasafuentes-1.png'],
+            ['image_url' => '/img/porfolio/screencapture-freelancer-u-nicolasafuentes-2.png'],
         ]);
 
-        Calification::create([
-            'title' => 'Facebook - Recomendación de Cliente',
-            'description' => '<img src="/facebook-opiniones-aziende-global-1.png"><img src="/facebook-opiniones-aziende-global-2.png">',
-            'image_path' => 'facebook-opiniones-aziende-global-1.png',
+        // 3. Facebook
+        $q = Qualification::create([
+            'title' => 'EXPERIENCIA: FACEBOOK',
+            'cover_image' => '/img/porfolio/facebook-opiniones-aziende-global-1.png',
+        ]);
+        $q->images()->createMany([
+            ['image_url' => '/img/porfolio/facebook-opiniones-aziende-global-1.png'],
+            ['image_url' => '/img/porfolio/facebook-opiniones-aziende-global-2.png'],
         ]);
     }
 }

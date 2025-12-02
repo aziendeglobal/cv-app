@@ -32,11 +32,21 @@ class CVController extends Controller
         return view('portfolio', $data);
     }
 
+    /*
     public function califications(Request $request)
     {
 
         $data['fullname'] = $this->CVService->getFullname();
 
         return view('califications', $data);
+    }
+        */
+
+    public function califications(CVService $cvService) // o como llames a tu método
+    {
+        $fullname = $this->CVService->getFullname();
+        $qualifications = $cvService->getQualifications();
+
+        return view('califications', compact('fullname', 'qualifications'));
     }
 }

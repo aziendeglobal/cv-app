@@ -21,7 +21,7 @@
         <div class="card col-12 col-xl-4  my-4">
             <a href="#" data-bs-toggle="modal" data-bs-target="#{{ $modalId }}">
                 {{-- La imagen de portada viene de la base de datos --}}
-                <img src="{{ asset('img/portfolio/' . $project->cover_image) }}" class="card-img-top" alt="{{ $project->title }}">
+                <img src="{{ '/img/portfolio/' . $project->cover_image }}" class="card-img-top" alt="{{ $project->title }}">
             </a>
             <div class="card-body">
                 <h5 class="card-title text-uppercase">
@@ -69,7 +69,7 @@
                             @foreach($project->images as $image)
                                 {{-- La primera imagen debe tener la clase 'active' --}}
                                 <div class="carousel-item @if($loop->first) active @endif">
-                                    <img src="{{ asset('img/portfolio/' . $image->image_path) }}" class="d-block w-100" alt="Slide image">
+                                    <img src="{{ '/img/portfolio/' . $image->image_path }}" class="d-block w-100" alt="Slide image">
                                 </div>
                             @endforeach
                         </div>

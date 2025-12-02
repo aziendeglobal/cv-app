@@ -67,12 +67,17 @@ class CVService
 
     public function getPortfolio()
     {
-        return Portfolio::with('images')->where('active',true)->orderBy('priority', 'ASC')->get(); //->toArray();
+        return Portfolio::with('images')->where('active', true)->orderBy('priority', 'ASC')->get(); //->toArray();
     }
 
     public function getFullname()
     {
         $personalDetails = PersonalDetail::first();
         return $personalDetails ? $personalDetails->full_name : '';
+    }
+
+    public function getQualifications()
+    {
+        return \App\Models\Qualification::with('images')->get();
     }
 }

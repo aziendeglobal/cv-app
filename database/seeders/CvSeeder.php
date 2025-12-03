@@ -744,30 +744,30 @@ Crystal Reports · Meta4 Peoplenet · SQL Avanzado · Oracle PL/SQL · Meta4 Emi
         // 1. Workana
         $q = Qualification::create([
             'title' => 'EXPERIENCIA: WORKANA.COM',
-            'cover_image' => '/img/porfolio/screencapture-workana-freelancer-2.png',
+            'cover_image' => 'screencapture-workana-freelancer-2.webp',
         ]);
         $q->images()->createMany([
-            ['image_url' => '/img/porfolio/screencapture-workana-freelancer-2.png'],
+            ['image_url' => 'screencapture-workana-freelancer-2.webp'],
         ]);
 
         // 2. Freelancer.com
         $q = Qualification::create([
             'title' => 'EXPERIENCIA: FREELANCER.COM',
-            'cover_image' => '/img/porfolio/screencapture-freelancer-u-nicolasafuentes-1.png',
+            'cover_image' => 'screencapture-freelancer-u-nicolasafuentes-1.webp',
         ]);
         $q->images()->createMany([
-            ['image_url' => '/img/porfolio/screencapture-freelancer-u-nicolasafuentes-1.png'],
-            ['image_url' => '/img/porfolio/screencapture-freelancer-u-nicolasafuentes-2.png'],
+            ['image_url' => 'screencapture-freelancer-u-nicolasafuentes-1.webp'],
+            ['image_url' => 'screencapture-freelancer-u-nicolasafuentes-2.webp'],
         ]);
 
         // 3. Facebook
         $q = Qualification::create([
             'title' => 'EXPERIENCIA: FACEBOOK',
-            'cover_image' => '/img/porfolio/facebook-opiniones-aziende-global-1.png',
+            'cover_image' => 'facebook-opiniones-aziende-global-1.webp',
         ]);
         $q->images()->createMany([
-            ['image_url' => '/img/porfolio/facebook-opiniones-aziende-global-1.png'],
-            ['image_url' => '/img/porfolio/facebook-opiniones-aziende-global-2.png'],
+            ['image_url' => 'facebook-opiniones-aziende-global-1.webp'],
+            ['image_url' => 'facebook-opiniones-aziende-global-2.webp'],
         ]);
     }
 }

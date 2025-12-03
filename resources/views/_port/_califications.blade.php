@@ -10,7 +10,7 @@
             <a href="#" data-bs-toggle="modal" data-bs-target="#{{ $modalId }}">
                 {{-- Imagen de portada con ajuste de altura para uniformidad --}}
                 <div style="height: 250px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #f8f9fa;">
-                    <img src="{{ $qual->cover_image }}" class="card-img-top" alt="{{ $qual->title }}" style="max-height: 100%; width: auto; max-width: 100%;">
+                    <img src="/img/portfolio/{{ $qual->cover_image }}" class="card-img-top" alt="{{ $qual->title }}" style="max-height: 100%; width: auto; max-width: 100%;">
                 </div>
             </a>
             <div class="card-body text-center">
@@ -41,7 +41,7 @@
                             <div class="carousel-inner">
                                 @foreach($qual->images as $image)
                                     <div class="carousel-item @if($loop->first) active @endif">
-                                        <img src="{{ $image->image_url }}" class="d-block w-100 shadow-sm" alt="{{ $qual->title }}">
+                                        <img src="/img/portfolio/{{ $image->image_url }}" class="d-block w-100 shadow-sm" alt="{{ $qual->title }}">
                                     </div>
                                 @endforeach
                             </div>
